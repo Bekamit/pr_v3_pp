@@ -63,7 +63,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
@@ -191,10 +190,9 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-# CORS_ALLOW_ALL_ORIGINS = True
-
 # CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Если ваш фронтенд работает на localhost:3000
     "http://hotelapi.pp.ua",
