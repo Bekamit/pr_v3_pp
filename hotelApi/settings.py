@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3bxn6((4hsjz@ipok+s+pw2_0n0#vjg$dw1)n9=t&782)-m02@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '16.170.205.114']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '13.48.147.207']
 
 #'lxdlwbubuykzarrx'
 # Application definition
@@ -191,14 +191,14 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ALLOW_CREDENTIALS = True
+# CORS_ALLOW_CREDENTIALS = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",  # Если ваш фронтенд работает на localhost:3000
-#     "http://hotelapi.pp.ua",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Если ваш фронтенд работает на localhost:3000
+    "http://hotelapi.pp.ua",
+]
 
 
 CACHES = {
